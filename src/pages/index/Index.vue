@@ -1,6 +1,8 @@
 <template>
   <page-wraper>
     <view class="page">
+      <view class="skyline">切换Skyline</view>
+
       <view class="page__hd">
         <view class="page__title">
           <view class="logo"></view>
@@ -404,7 +406,11 @@ function kindToggle(id: string) {
     filter: invert(100%);
   }
 }
+.page {
+  position: relative;
+}
 .page__hd {
+  position: relative;
   padding: 40px 40px 30px;
   margin-bottom: 30px;
   background: #fff;
@@ -414,6 +420,17 @@ function kindToggle(id: string) {
   font-size: 20px;
   font-weight: 400;
   color: #0083ff;
+}
+.skyline {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  right: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #0083ff;
+  text-decoration: underline;
+  font-style: italic;
 }
 .page__desc {
   margin-top: 20px;
